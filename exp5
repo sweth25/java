@@ -1,0 +1,26 @@
+package swethlab;
+
+public class Exp5
+  {
+	String employeeId; 
+	double salary; 
+	String address;
+	
+	public Exp5 (String employeeId, double salary, String address) {
+	this.employeeId = employeeId; 
+	this.salary = salary; 
+	this.address = address;
+	}
+		   
+	public void displayDetails() 
+	{
+		System.out.println("Employee ID: " + employeeId);
+		System.out.println("Salary: $" + salary);
+		System.out.println("Address: " + address); }
+		
+	public static void main(String[] args) {
+		Exp5 obj = new Exp5 ("E12345", 50000.0, "123 Main St , Anytown , USA");
+		obj.displayDetails(); }
+	
+  }
+		
